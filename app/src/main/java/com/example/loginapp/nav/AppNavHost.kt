@@ -15,7 +15,7 @@ fun AppNavHost() {
             LoginScreen(onSignUpClick = { nav.navigate(RegisterRoute) })
         }
         composable<RegisterRoute> {
-            RegisterScreen(onSignInClick = { nav.navigate(LoginRoute) })
+            RegisterScreen(onSignInClick = { nav.popBackStack() })
         }
     }
 }
